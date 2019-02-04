@@ -1,0 +1,21 @@
+def inputboi():
+    str = input('What would you like your string to be? ')
+    x = input('what word do you want to find? ')
+    index = str.find(x)
+    print('Index =', index)
+    if index == -1:
+        print('That is not here')
+    return
+restart = "y"
+#while restart == 'y':
+#    inputboi()
+#    restart = input('Would you like to restart? y/n ')
+def challenge1a():
+    def inputboi():
+    str = input('What would you like your string to be? ')
+    x = input('what word do you want to find? ')
+    index = str.find(x)
+    print('Index =', index)
+    if index == -1:
+        print('That is not here')
+    return
