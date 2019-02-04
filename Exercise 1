@@ -1,0 +1,16 @@
+str = 'This is the ultimate string'
+word = input ('Input input a word ')
+index = str.find(word)
+length = len(str)
+str2=str[index:length]
+space = str2.find(' ')
+wordlen = space + index
+space2 = wordlen-index
+fullword2 = str[space2:length]
+finder = fullword2.find(' ')
+print (finder)
+print (space2)
+fullWord =str[index:wordlen]
+print(fullWord)
+if word == -1:
+    print('Word not found')
