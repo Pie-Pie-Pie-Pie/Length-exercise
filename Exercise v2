@@ -1,0 +1,25 @@
+wr = 'This is the ultimate string'
+word = input('Word me ')
+index = wr.find(word)
+length = len(wr)
+str2=wr[index:length]
+space = str2.find(' ')
+
+if space == -1:
+    wordlen = length + index
+else:
+    wordlen = space + index
+index2 = wr[index-2:0:-1]
+len2 = len(index2)
+possans = index2.find(' ')
+end=possans+len2-2
+space3 = wr[end-1:0:-1]
+len3 = len(space3)
+reans = space3.find(' ')
+begin = len3-reans
+wordFull = wr[begin+1:end+1]
+print(wordFull)
+fullWord =wr[index:wordlen]
+print(fullWord)
+if word == -1:
+    print('Word not found')
