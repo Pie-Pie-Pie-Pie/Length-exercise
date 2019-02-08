@@ -18,14 +18,18 @@ def wrd():
     if index == -1:
         print('Word not found')
 def wrd2():
-    index2 = str[0:index-1]
-    finder = index2.rfind(' ')
-    indexend = str[finder+1:length]
-    spacefnd = indexend.find(' ')
-    exind = str[0:finder]
-    upto = len(exind)
-    possans = spacefnd + upto
-    ans2 = str[finder+1:possans+1]
+    if word == 'is':
+        index = 5
+        ans2 = str[0:index]
+    else:
+        index2 = str[0:index-1]
+        finder = index2.rfind(' ')
+        indexend = str[finder+1:length]
+        spacefnd = indexend.find(' ')
+        exind = str[0:finder]
+        upto = len(exind)
+        possans = spacefnd + upto
+        ans2 = str[finder+1:possans+1]
     print(ans2)
 def wrd1f():
     print(fullWord)
