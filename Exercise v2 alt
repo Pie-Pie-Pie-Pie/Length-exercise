@@ -18,9 +18,14 @@ def wrd():
     if index == -1:
         print('Word not found')
 def wrd2():
+    global index
     if word == 'is':
         index = 5
         ans2 = str[0:index]
+    elif index == 0:
+        index = length
+        toans = str.rfind(' ')
+        ans2 = str[toans+1:index+1]
     else:
         index2 = str[0:index-1]
         finder = index2.rfind(' ')
@@ -34,8 +39,12 @@ def wrd2():
 def wrd1f():
     print(fullWord)
 restart = 'y'
-while restart == 'y':
-    wrd()
-    wrd2()
-    wrd1f()
+while restart != 'n':
+    if restart != 'y':
+        print('That is not a valid answer')
+    else:
+        wrd()
+        wrd2()
+        wrd1f()
+    restart = input('Would you like to restart? y/n ')
     restart = input('Would you like to restart? y/n ')
