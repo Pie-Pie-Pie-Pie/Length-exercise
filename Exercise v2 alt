@@ -47,4 +47,3 @@ while restart != 'n':
         wrd2()
         wrd1f()
     restart = input('Would you like to restart? y/n ')
-    restart = input('Would you like to restart? y/n ')
